@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicita tu crédito | Resuelve</title>
+  <meta name="description" content="Solicita tu crédito por libranza con descuento automático por nómina. Proceso 100% digital, sin codeudor." />
+  <link rel="stylesheet" href="../css/formulario.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <nav class="navbar container" role="navigation" aria-label="Navegación principal">
+      <a href="index.html" class="logo" aria-label="Resuelve - Inicio">Resuelve</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <svg data-lucide="menu" width="24" height="24"></svg>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="convenios.html">Convenios</a></li>
+        <li><a href="libranza.html">¿Qué es una libranza?</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="solicita.html" class="btn-primary nav-cta">Solicita ahora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FORMULARIO -->
+  <main class="container formulario-seccion" role="main">
+    <h1 class="section-title">Solicita tu crédito</h1>
+    <p class="section-subtitle">
+      Completa el formulario y un asesor se pondrá en contacto contigo lo antes posible.
+    </p>
+
+    <form id="form-solicitud">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" name="nombre" id="nombre" required placeholder="Ej: Ana María López" />
+      </div>
+
+      <div class="form-group">
+        <label for="cedula">Número de cédula</label>
+        <input type="text" name="cedula" id="cedula" required placeholder="Ej: 1234567890" />
+      </div>
+
+      <div class="form-group">
+        <label for="entidad">Entidad donde trabaja</label>
+        <input type="text" name="entidad" id="entidad" required placeholder="Ej: Gobernación del Cauca" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email" required placeholder="Ej: usuario@correo.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono / WhatsApp</label>
+        <input type="tel" name="telefono" id="telefono" required placeholder="Ej: +57 300 123 4567" />
+      </div>
+
+      <div class="form-group">
+        <label for="monto">Monto deseado (COP)</label>
+        <input type="number" name="monto" id="monto" required placeholder="Ej: 5.000.000" />
+      </div>
+
+      <div class="form-group form-check">
+        <label>
+          <input type="checkbox" required />
+          Autorizo el tratamiento de mis datos personales conforme a la Ley 1581 de 2012.
+        </label>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar solicitud</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container container">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">Resuelve</a>
+        <p class="footer-description">
+          Crédito por libranza fácil, digital y confiable para trabajadores y pensionados.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="solicita.html">Solicita</a></li>
+          <li><a href="convenios.html">Convenios</a></li>
+          <li><a href="libranza.html">¿Qué es una libranza?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contáctanos</h4>
+        <ul class="footer-contact">
+          <li><a href="mailto:contacto@tulibranza.com">📧 contacto@tulibranza.com</a></li>
+          <li><a href="tel:+573001234567">📞 +57 300 123 4567</a></li>
+          <li><a href="https://wa.me/573001234567" target="_blank">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Resuelve. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init('kkGO6D1eJZsZw2WUg'); // Reemplaza con tu user ID de EmailJS
+    })();
+
+    document.getElementById("form-solicitud").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm('default_service', 'template_libranza', this)
+        .then(() => {
+          alert("✅ Tu solicitud fue enviada con éxito. Pronto te contactaremos.");
+          this.reset();
+        }, (err) => {
+          console.error("Error:", err);
+          alert("❌ Hubo un error al enviar tu solicitud. Inténtalo nuevamente.");
+        });
+    });
+  </script>
+
+</body>
+</html>

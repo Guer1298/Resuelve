@@ -1,0 +1,294 @@
+/* ------------------------------
+   VARIABLES (para escalabilidad)
+------------------------------ */
+:root {
+    --font-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-primary: #0070f3;
+    --color-primary-hover: #005dc1;
+    --color-accent: #facc15;
+    --color-dark: #1f2937;
+    --color-muted: #4b5563;
+    --color-bg: #f9fafb;
+    --color-white: #ffffff;
+    --color-light-gray: #e5e7eb;
+    --shadow-card: 0 4px 12px rgba(0, 112, 243, 0.05);
+    --radius-base: 12px;
+    --transition: all 0.3s ease;
+  }
+  
+  /* ------------------------------
+     ESTILOS BASE
+  ------------------------------ */
+  body {
+    font-family: var(--font-base);
+    background-color: var(--color-bg);
+    color: var(--color-dark);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* ------------------------------
+     HEADER / NAVBAR
+  ------------------------------ */
+  .site-header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-light-gray);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-dark);
+    transition: var(--transition);
+  }
+  
+  .nav-links a:hover {
+    color: var(--color-primary);
+  }
+  
+  /* ------------------------------
+     CONTENIDO GENERAL
+  ------------------------------ */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: var(--color-white);
+    padding: 1.8rem;
+    border-radius: var(--radius-base);
+    border: 1px solid var(--color-light-gray);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 0.75rem;
+  }
+  
+  .card p {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+  }
+  
+  /* ------------------------------
+     OL: CÓMO FUNCIONA
+  ------------------------------ */
+  ol {
+    padding-left: 1.5rem;
+    color: var(--color-dark);
+  }
+  
+  ol li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    position: relative;
+  }
+  
+  /* ------------------------------
+     FAQ / CTA / PREGUNTAS
+  ------------------------------ */
+  .cta {
+    background-color: #edf6ff;
+    padding: 2rem;
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow-card);
+    margin-top: 3rem;
+  }
+  
+  .cta h2 {
+    margin-bottom: 1.2rem;
+  }
+  
+  .cta p {
+    color: var(--color-muted);
+    margin-bottom: 1.2rem;
+  }
+  
+  .cta h4 {
+    color: var(--color-primary);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+  }
+  
+  /* ------------------------------
+     BOTONES
+  ------------------------------ */
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.85rem 1.6rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+  }
+  
+  /* ------------------------------
+     FOOTER
+  ------------------------------ */
+  .site-footer {
+    background-color: #111827;
+    color: #e5e7eb;
+    padding: 3rem 1rem 2rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    flex: 1 1 250px;
+  }
+  
+  .footer-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--color-accent);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-description {
+    color: #9ca3af;
+    line-height: 1.5;
+    max-width: 300px;
+  }
+  
+  .footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #f9fafb;
+  }
+  
+  .footer-links,
+  .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li,
+  .footer-contact li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-contact a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .footer-links a:hover,
+  .footer-contact a:hover {
+    color: var(--color-accent);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #374151;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: #9ca3af;
+  }
+  
+  /* ------------------------------
+     RESPONSIVE
+  ------------------------------ */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  
+    .btn-primary {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .cta {
+      padding: 1.5rem;
+    }
+  }
+  

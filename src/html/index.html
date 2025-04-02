@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Resuelve</title>
+  <meta name="description" content="Créditos por libranza rápidos, seguros y sin complicaciones. Solicita el tuyo con tasas bajas y atención personalizada." />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+  <!-- Mejora rendimiento y SEO social -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+  <meta property="og:title" content="TuLibranza - Crédito por Libranza Rápido y Seguro" />
+  <meta property="og:description" content="Solicita tu crédito con tasas preferenciales y sin codeudor." />
+  <meta property="og:image" content="https://tulibranza.com/img/og-image.jpg" />
+  <meta property="og:url" content="https://tulibranza.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+<body>
+<!-- HEADER PROFESIONAL -->
+<header class="site-header" role="banner">
+    <nav class="navbar container" role="navigation" aria-label="Navegación principal">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Resuelve - Inicio">Resuelve</a>
+  
+      <!-- Toggle responsive -->
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <svg data-lucide="menu" width="24" height="24"></svg>
+      </button>
+  
+      <!-- Navegación principal -->
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="solicita.html">Solicita</a></li>
+        <li><a href="convenios.html">Convenios</a></li>
+        <li><a href="libranza.html">¿Qué es una libranza?</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="solicita.html" class="btn-primary nav-cta">Solicita ahora</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <script>
+    lucide.createIcons();
+  
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+  
+    toggleBtn.addEventListener('click', () => {
+      const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', !expanded);
+      navMenu.classList.toggle('active');
+    });
+  </script>
+  
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="main-content">
+  
+    <!-- HERO -->
+<section class="hero hero-with-image">
+    <div class="hero-overlay">
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Crédito por libranza <span class="highlight">rápido, seguro</span> <br />
+          y sin complicaciones.
+        </h1>
+        <p class="hero-subtitle">
+          Te acompañamos con soluciones financieras personalizadas, sin codeudor y 100% digital. Tu tranquilidad empieza hoy.
+        </p>
+        <div class="hero-actions">
+          <a href="solicita.html" class="btn-primary">Solicita tu crédito</a>
+          <a href="libranza.html" class="btn-secondary">¿Qué es una libranza?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <section class="beneficios container" aria-labelledby="beneficios-title">
+    <h2 class="section-title" id="beneficios-title">¿Por qué elegir Resuelve</h2>
+    <p class="section-subtitle">
+      Porque entendemos tus necesidades y diseñamos soluciones reales para trabajadores y pensionados.
+    </p>
+  
+    <div class="cards-beneficios">
+      <!-- Beneficio 1 -->
+      <div class="card-beneficio fade-in">
+        <div class="icono" data-lucide="percent"></div>
+        <h3 class="card-title">Tasas competitivas</h3>
+        <p class="card-text">Accede a intereses más bajos que en bancos tradicionales, con plazos flexibles y personalizados.</p>
+      </div>
+  
+      <!-- Beneficio 2 -->
+      <div class="card-beneficio fade-in">
+        <div class="icono" data-lucide="credit-card"></div>
+        <h3 class="card-title">Descuento automático</h3>
+        <p class="card-text">Tus pagos se descuentan directamente de tu nómina o pensión. Siempre a tiempo, sin preocuparte.</p>
+      </div>
+  
+      <!-- Beneficio 3 -->
+      <div class="card-beneficio fade-in">
+        <div class="icono" data-lucide="globe"></div>
+        <h3 class="card-title">Proceso 100% digital</h3>
+        <p class="card-text">Solicita, firma y recibe tu crédito desde cualquier lugar. Acompañamiento humano en todo momento.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Inicializar Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  
+<!-- CÓMO FUNCIONA -->
+<section class="pasos container" aria-labelledby="pasos-title">
+    <h2 class="section-title" id="pasos-title">¿Cómo funciona Resuelve?</h2>
+    <p class="section-subtitle">Solicitar tu crédito nunca fue tan fácil. Solo sigue estos pasos:</p>
+  
+    <div class="pasos-grid">
+      <!-- Paso 1 -->
+      <div class="paso fade-in">
+        <div class="paso-icono" data-lucide="file-text"></div>
+        <h3 class="paso-numero">Solicita en línea</h3>
+        <p class="paso-descripcion">Completa el formulario con tus datos desde cualquier dispositivo.</p>
+      </div>
+  
+      <!-- Paso 2 -->
+      <div class="paso fade-in">
+        <div class="paso-icono" data-lucide="search-check"></div>
+        <h3 class="paso-numero">Validación de perfil</h3>
+        <p class="paso-descripcion">Revisamos tu información y confirmamos con tu entidad empleadora.</p>
+      </div>
+  
+      <!-- Paso 3 -->
+      <div class="paso fade-in">
+        <div class="paso-icono" data-lucide="signature"></div>
+        <h3 class="paso-numero">Firma digital</h3>
+        <p class="paso-descripcion">Firma tu autorización de libranza de forma segura y electrónica.</p>
+      </div>
+  
+      <!-- Paso 4 -->
+      <div class="paso fade-in">
+        <div class="paso-icono" data-lucide="wallet"></div>
+        <h3 class="paso-numero">Recibe tu dinero</h3>
+        <p class="paso-descripcion">Desembolsamos el crédito directamente a tu cuenta bancaria.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Inicializar íconos -->
+  <script>
+    lucide.createIcons();
+  </script>
+  
+  
+  
+
+ <!-- FOOTER PROFESIONAL -->
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-container container">
+      <!-- Columna 1: Marca -->
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">Resuelve</a>
+        <p class="footer-description">
+          Crédito por libranza fácil, digital y confiable para trabajadores y pensionados.
+        </p>
+      </div>
+  
+      <!-- Columna 2: Navegación -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="solicita.html">Solicita</a></li>
+          <li><a href="convenios.html">Convenios</a></li>
+          <li><a href="libranza.html">¿Qué es una libranza?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+  
+      <!-- Columna 3: Contacto -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contáctanos</h4>
+        <ul class="footer-contact">
+          <li><a href="mailto:contacto@tulibranza.com">📧 contacto@tulibranza.com</a></li>
+          <li><a href="tel:+573001234567">📞 +57 300 123 4567</a></li>
+          <li><a href="https://wa.me/573001234567" target="_blank">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 Resuelve. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+
+  <!-- JS Opcional -->
+  <script src="../js/index.js" ></script>
+</body>
+</html>
