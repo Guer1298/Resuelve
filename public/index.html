@@ -27,7 +27,7 @@
 <header class="site-header" role="banner">
     <nav class="navbar container" role="navigation" aria-label="Navegación principal">
       <!-- Logo -->
-      <a href="index.html" class="logo" aria-label="Resuelve - Inicio"><img src="/assets/2.svg" alt=""></a>
+      <a href="index.html" class="logo" aria-label="Resuelve - Inicio"><img src="./assets/2.svg" alt=""></a>
   
       <!-- Toggle responsive -->
       <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
@@ -63,56 +63,69 @@
   <main id="main-content">
   
     <!-- HERO -->
-<section class="hero hero-with-image">
-    <div class="hero-overlay">
-      <div class="container hero-content">
-        <h1 class="hero-title">
-          Crédito por libranza <span class="highlight">rápido, seguro</span> <br />
-          y sin complicaciones.
-        </h1>
-        <p class="hero-subtitle">
-          Te acompañamos con soluciones financieras personalizadas, sin codeudor y 100% digital. Tu tranquilidad empieza hoy.
-        </p>
-        <div class="hero-actions">
-          <a href="solicita.html" class="btn-primary">Solicita tu crédito</a>
-          <a href="libranza.html" class="btn-secondary">¿Qué es una libranza?</a>
+    <section class="hero hero-with-image" role="banner" aria-label="Crédito por libranza rápido y sin complicaciones">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1 class="hero-title animate-fade-up">
+            Crédito por libranza <span class="highlight">rápido, seguro</span> <br />
+            y sin complicaciones.
+          </h1>
+          <p class="hero-subtitle animate-fade-up delay-1">
+            Soluciones financieras <strong>personalizadas</strong> y 100% digitales.<br />
+            <span>Sin codeudores, sin filas, sin estrés.</span> Tu tranquilidad empieza hoy.
+          </p>
+          <div class="hero-actions animate-fade-up delay-2" role="group" aria-label="Acciones principales">
+            <a href="solicita.html" class="btn-primary" aria-label="Solicitar crédito ahora">Solicita tu crédito</a>
+            <a href="libranza.html" class="btn-secondary" aria-label="Conoce qué es una libranza">¿Qué es una libranza?</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
   
   
   
 
-  <section class="beneficios container" aria-labelledby="beneficios-title">
-    <h2 class="section-title" id="beneficios-title">¿Por qué elegir Resuelve</h2>
-    <p class="section-subtitle">
-      Porque entendemos tus necesidades y diseñamos soluciones reales para trabajadores y pensionados.
-    </p>
-  
-    <div class="cards-beneficios">
-      <!-- Beneficio 1 -->
-      <div class="card-beneficio fade-in">
-        <div class="icono" data-lucide="percent"></div>
-        <h3 class="card-title">Tasas competitivas</h3>
-        <p class="card-text">Accede a intereses más bajos que en bancos tradicionales, con plazos flexibles y personalizados.</p>
+    <section class="beneficios container" aria-labelledby="beneficios-title">
+      <h2 class="section-title animate-fade-up" id="beneficios-title">
+        ¿Por qué elegir <span class="highlight">Resuelve</span>?
+      </h2>
+    
+      <p class="section-subtitle animate-fade-up delay-1">
+        Porque entendemos tus necesidades y diseñamos <strong>soluciones reales</strong> para trabajadores y pensionados. 
+        Aquí no hay letra pequeña, solo beneficios que resuelven.
+      </p>
+    
+      <div class="cards-beneficios" role="list">
+        <!-- Beneficio 1 -->
+        <div class="card-beneficio fade-in" role="listitem">
+          <div class="icono" aria-hidden="true" data-lucide="percent"></div>
+          <h3 class="card-title">Tasas competitivas</h3>
+          <p class="card-text">
+            Disfruta <span>intereses más bajos</span> que los bancos tradicionales, con <span>plazos flexibles</span> adaptados a ti.
+          </p>
+        </div>
+    
+        <!-- Beneficio 2 -->
+        <div class="card-beneficio fade-in delay-1" role="listitem">
+          <div class="icono" aria-hidden="true" data-lucide="credit-card"></div>
+          <h3 class="card-title">Descuento automático</h3>
+          <p class="card-text">
+            Olvídate de las fechas. Tus pagos se descuentan <span>directamente</span> de tu nómina o pensión. Puntual, sin estrés.
+          </p>
+        </div>
+    
+        <!-- Beneficio 3 -->
+        <div class="card-beneficio fade-in delay-2" role="listitem">
+          <div class="icono" aria-hidden="true" data-lucide="globe"></div>
+          <h3 class="card-title">100% digital, 100% humano</h3>
+          <p class="card-text">
+            Desde la solicitud hasta el desembolso, haz todo <span>sin salir de casa</span>, con <span>acompañamiento humano</span> en cada paso.
+          </p>
+        </div>
       </div>
-  
-      <!-- Beneficio 2 -->
-      <div class="card-beneficio fade-in">
-        <div class="icono" data-lucide="credit-card"></div>
-        <h3 class="card-title">Descuento automático</h3>
-        <p class="card-text">Tus pagos se descuentan directamente de tu nómina o pensión. Siempre a tiempo, sin preocuparte.</p>
-      </div>
-  
-      <!-- Beneficio 3 -->
-      <div class="card-beneficio fade-in">
-        <div class="icono" data-lucide="globe"></div>
-        <h3 class="card-title">Proceso 100% digital</h3>
-        <p class="card-text">Solicita, firma y recibe tu crédito desde cualquier lugar. Acompañamiento humano en todo momento.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+    
   
   <!-- Inicializar Lucide Icons -->
   <script>
@@ -121,39 +134,52 @@
   
 <!-- CÓMO FUNCIONA -->
 <section class="pasos container" aria-labelledby="pasos-title">
-    <h2 class="section-title" id="pasos-title">¿Cómo funciona Resuelve?</h2>
-    <p class="section-subtitle">Solicitar tu crédito nunca fue tan fácil. Solo sigue estos pasos:</p>
-  
-    <div class="pasos-grid">
-      <!-- Paso 1 -->
-      <div class="paso fade-in">
-        <div class="paso-icono" data-lucide="file-text"></div>
-        <h3 class="paso-numero">Solicita en línea</h3>
-        <p class="paso-descripcion">Completa el formulario con tus datos desde cualquier dispositivo.</p>
-      </div>
-  
-      <!-- Paso 2 -->
-      <div class="paso fade-in">
-        <div class="paso-icono" data-lucide="search-check"></div>
-        <h3 class="paso-numero">Validación de perfil</h3>
-        <p class="paso-descripcion">Revisamos tu información y confirmamos con tu entidad empleadora.</p>
-      </div>
-  
-      <!-- Paso 3 -->
-      <div class="paso fade-in">
-        <div class="paso-icono" data-lucide="signature"></div>
-        <h3 class="paso-numero">Firma digital</h3>
-        <p class="paso-descripcion">Firma tu autorización de libranza de forma segura y electrónica.</p>
-      </div>
-  
-      <!-- Paso 4 -->
-      <div class="paso fade-in">
-        <div class="paso-icono" data-lucide="wallet"></div>
-        <h3 class="paso-numero">Recibe tu dinero</h3>
-        <p class="paso-descripcion">Desembolsamos el crédito directamente a tu cuenta bancaria.</p>
-      </div>
+  <h2 class="section-title animate-fade-up" id="pasos-title">
+    ¿Cómo funciona <span class="highlight">Resuelve</span>?
+  </h2>
+  <p class="section-subtitle animate-fade-up delay-1">
+    Solicitar tu crédito nunca fue tan fácil. <strong>Solo sigue estos 4 pasos y listo.</strong>
+  </p>
+
+  <div class="pasos-grid" role="list">
+    <!-- Paso 1 -->
+    <div class="paso fade-in" role="listitem">
+      <div class="paso-icono" aria-hidden="true" data-lucide="file-text"></div>
+      <h3 class="paso-numero">1. Solicita en línea</h3>
+      <p class="paso-descripcion">
+        Completa el formulario con tus datos desde cualquier dispositivo. <span>Rápido y sin filas.</span>
+      </p>
     </div>
-  </section>
+
+    <!-- Paso 2 -->
+    <div class="paso fade-in delay-1" role="listitem">
+      <div class="paso-icono" aria-hidden="true" data-lucide="search-check"></div>
+      <h3 class="paso-numero">2. Validamos tu perfil</h3>
+      <p class="paso-descripcion">
+        Revisamos tu información y confirmamos con tu entidad empleadora. <span>Sin papeleo innecesario.</span>
+      </p>
+    </div>
+
+    <!-- Paso 3 -->
+    <div class="paso fade-in delay-2" role="listitem">
+      <div class="paso-icono" aria-hidden="true" data-lucide="signature"></div>
+      <h3 class="paso-numero">3. Firma digital</h3>
+      <p class="paso-descripcion">
+        Firma tu autorización de libranza de forma <span>segura y electrónica</span>. Lo haces desde donde estés.
+      </p>
+    </div>
+
+    <!-- Paso 4 -->
+    <div class="paso fade-in delay-3" role="listitem">
+      <div class="paso-icono" aria-hidden="true" data-lucide="wallet"></div>
+      <h3 class="paso-numero">4. Recibe tu dinero</h3>
+      <p class="paso-descripcion">
+        ¡Listo! Desembolsamos tu crédito <span>directamente en tu cuenta</span>. Sin trámites, sin vueltas.
+      </p>
+    </div>
+  </div>
+</section>
+
   
   <!-- Inicializar íconos -->
   <script>
@@ -164,43 +190,59 @@
   
 
  <!-- FOOTER PROFESIONAL -->
-<footer class="site-footer" role="contentinfo">
-    <div class="footer-container container">
-      <!-- Columna 1: Marca -->
-      <div class="footer-col">
-        <a href="index.html" class="footer-logo"><img src="/assets/1.svg" alt=""></a>
-        <p class="footer-description">
-          Crédito por libranza fácil, digital y confiable para trabajadores y pensionados.
-        </p>
-      </div>
-  
-      <!-- Columna 2: Navegación -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Navegación</h4>
-        <ul class="footer-links">
-          <li><a href="solicita.html">Solicita</a></li>
-          <li><a href="convenios.html">Convenios</a></li>
-          <li><a href="libranza.html">¿Qué es una libranza?</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-  
-      <!-- Columna 3: Contacto -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Contáctanos</h4>
-        <ul class="footer-contact">
-          <li><a href="mailto:contacto@tulibranza.com">📧 contacto@resuelve.it.com</a></li>
-          <li><a href="tel:+573001234567">📞 +57 300 405 6356</a></li>
-          <li><a href="https://wa.me/573004056356" target="_blank">💬 WhatsApp</a></li>
-        </ul>
-      </div>
+ <footer class="site-footer" role="contentinfo">
+  <div class="footer-container container">
+    
+    <!-- Columna 1: Marca -->
+    <div class="footer-col">
+      <a href="index.html" class="footer-logo" aria-label="Ir al inicio">
+        <img src="./assets/1.svg" alt="Logo Resuelve" />
+      </a>
+      <p class="footer-description">
+        Crédito por libranza <strong>fácil, digital y confiable</strong> para trabajadores y pensionados en Colombia.
+      </p>
     </div>
-  
-    <div class="footer-bottom">
-      <p>© 2025 Resuelve. Todos los derechos reservados.</p>
+
+    <!-- Columna 2: Navegación -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Navegación</h4>
+      <ul class="footer-links" aria-label="Enlaces de navegación">
+        <li><a href="solicita.html">Solicita tu crédito</a></li>
+        <li><a href="convenios.html">Convenios</a></li>
+        <li><a href="libranza.html">¿Qué es una libranza?</a></li>
+        <li><a href="contacto.html">Contáctanos</a></li>
+      </ul>
     </div>
-  </footer>
-  
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-col">
+      <h4 class="footer-heading">Contáctanos</h4>
+      <ul class="footer-contact" aria-label="Datos de contacto">
+        <li>
+          <a href="mailto:contacto@resuelve.it.com" aria-label="Enviar un correo a Resuelve">
+            📧 contacto@resuelve.it.com
+          </a>
+        </li>
+        <li>
+          <a href="tel:+573004056356" aria-label="Llamar a Resuelve">
+            📞 +57 300 405 6356
+          </a>
+        </li>
+        <li>
+          <a href="https://wa.me/573004056356" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+            💬 Escríbenos por WhatsApp
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pie final -->
+  <div class="footer-bottom">
+    <p>© 2025 <strong>Resuelve</strong>. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
 
   <!-- JS Opcional -->
   <script src="./js/index.js" ></script>
